@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <link href="img/gym.png" rel="icon">
+
+</head>
+
+<style>
+
+    .btn {
+        font-family: 'Cabin', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: #FEE715FF;
+        color: black;
+
+    }
+
+
+    body{
+        color: white;
+        font-family: 'Cabin', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .left{
+        position: absolute;
+        top: 20px;
+        left: 34px;
+        display:inline-block;
+        
+
+    }
+
+    .left img{
+        width: 40px;
+        filter: invert(100%);
+        
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .left div{
+        text-align: center;
+    }
+
+    
+    .mid{
+        display:block;
+        width: 33%;
+        margin: 20px auto;
+        
+
+    }
+
+    .right{
+        display:inline-block;
+        position: absolute;
+        top: 17px;
+        right: 60px;
+
+    }
+
+    .social{
+        display: inline-block;
+        width: 23px;
+        padding: 20px 10px;
+
+    }
+
+    .social:hover{
+        width: 23px;
+        background-color: #FEE715FF;
+
+    }
+
+
+    
+
+    .navbar{
+        display: inline-block;
+        
+
+    }
+
+    .navbar li{
+        display: inline-block;
+
+    }
+
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 11px;
+        font-weight: 500;
+    }
+
+    .navbar li a:hover{
+        color: #FEE715FF;
+        font-size: 19px;
+    }
+
+   
+
+    .container {
+        display: inline-block;
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .form-group input{
+        /* position: relative; */
+        display: inline-block;
+        font-family: 'Cabin', sans-serif;
+        text-align: center;
+        display: block;
+        width: 70%;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+
+    .city{
+        color: #FEE715FF;
+
+
+    }
+
+    .radio-toolbar{
+        padding-left: 12%;
+    }
+
+    .radio-toolbar input[type="radio"] {
+        opacity: 100;
+        position: inline-block;
+        width: 0;
+        border-radius: 8px;
+        
+    }
+
+    .radio-toolbar label {
+    display: inline-block;
+    background-color: black;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    
+    }
+
+    .radio-toolbar input[type="radio"]:checked + label{
+    color:black;
+    background-color:#FEE715FF;
+    border-color: black;
+    }
+
+    
+
+    
+
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="img/gym.png" class = 'logo' >
+            <div class="">
+                Aavash Fitness
+            </div>
+
+        </div>
+
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#" class="active">Fitness Calculator</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        
+        <div class="right">
+
+            <div >
+                <a href="fb.com"><img src="img/twitter.png" class="social" ></a>
+                <a href="fb.com"><img src="img/insta.png" class="social twitter"></a>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of <span class="city">Kathmandu</span> now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age" max="2">
+            </div>
+            <div class="radio-toolbar">
+                <input type="radio" id="radioMale" name="radioGender" value="Male" checked>
+                <label for="radioMale">Male</label>
+
+                <input type="radio" id="radioFemale" name="radioGender" value="Female">
+                <label for="radioFemale">Female</label>
+
+                <input type="radio" id="radioOther" name="radioGender" value="other">
+                <label for="radioOther">Other</label> 
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="" placeholder="Enter your Phone Number" >
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    
+    
+
+    
+    
+    
+</body>
+</html>
